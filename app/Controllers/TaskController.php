@@ -18,13 +18,13 @@ class TaskController {
             $description = $_POST['description'];
             $priority = $_POST['priority'];
             
-            // Assume you have a Task model to handle database interactions
+          
             $task = new Task();
             $task->create($title, $description, $priority);
     
-            // After creating, redirect to the tasks index page
-            header("Location: /task-manager/public/index.php"); // Ensure this points to the correct path
-            exit(); // Important to exit after a redirect
+          
+            header("Location: /task-manager/public/index.php"); 
+            exit(); 
         }
     }
     

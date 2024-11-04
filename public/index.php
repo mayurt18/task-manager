@@ -4,7 +4,7 @@ require_once '../app/Controllers/TaskController.php';
 require_once '../app/Controllers/AuthController.php';
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$uri = str_replace('/task-manager/public', '', $uri); // Adjust URI
+$uri = str_replace('/task-manager/public', '', $uri); 
 
 if ($uri === '/' || $uri === '/index.php') {
     $taskController = new TaskController();

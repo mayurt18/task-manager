@@ -39,12 +39,12 @@ public function update($id, $title, $description, $priority, $status) {
         if ($stmt) {
             $stmt->bind_param("i", $id);
             if ($stmt->execute()) {
-                return true; // Successful deletion
+                return true; 
             } else {
-                return false; // Execution failed
+                return false; 
             }
         }
-        return false; // Prepare failed
+        return false; 
     }
     
 }

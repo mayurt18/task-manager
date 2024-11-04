@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="/task-manager/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container mt-5">
     <h2 class="text-center">Register for Task Manager</h2>
-    <form method="POST" action="/task-manager/app/tasks/create">
+    <form method="POST" action="/auth/register">
         <div class="form-group">
             <label>Username</label>
             <input type="text" name="username" class="form-control" required>
@@ -24,7 +25,7 @@
         </div>
         <button type="submit" class="btn btn-primary btn-block">Register</button>
     </form>
-    <p class="text-center mt-3">Already have an account? <a href="/task-manager/app/Views/auth/login.php">Login</a></p>
+    <p class="text-center mt-3">Already have an account? <a href="/login">Login</a></p>
 </div>
 </body>
 </html>
